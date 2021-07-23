@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		D8B8DF2326AAEBDD00136F7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8DF2226AAEBDD00136F7D /* ContentView.swift */; };
 		D8B8DF2526AAEBDF00136F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B8DF2426AAEBDF00136F7D /* Assets.xcassets */; };
 		D8B8DF2826AAEBDF00136F7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B8DF2726AAEBDF00136F7D /* Preview Assets.xcassets */; };
+		D8F01EF226AB001100DC36B9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F01EF126AB001100DC36B9 /* CustomTextField.swift */; };
+		D8F01EF726AB031800DC36B9 /* PharmacyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F01EF626AB031800DC36B9 /* PharmacyListView.swift */; };
+		D8F01EF926AB038300DC36B9 /* DutyPharmacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F01EF826AB038300DC36B9 /* DutyPharmacy.swift */; };
+		D8F01EFF26AB042D00DC36B9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F01EFD26AB042D00DC36B9 /* API.swift */; };
+		D8F01F0026AB042D00DC36B9 /* APIPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F01EFE26AB042D00DC36B9 /* APIPaths.swift */; };
+		D8F01F0326AB049D00DC36B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D8F01F0226AB049D00DC36B9 /* Alamofire */; };
+		D8F01F0526AB04C800DC36B9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F01F0426AB04C800DC36B9 /* Constant.swift */; };
+		D8F01F0826AB052C00DC36B9 /* PharmacyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F01F0726AB052C00DC36B9 /* PharmacyListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		D8B8DF2426AAEBDF00136F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8B8DF2726AAEBDF00136F7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8B8DF2926AAEBDF00136F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F01EF126AB001100DC36B9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D8F01EF626AB031800DC36B9 /* PharmacyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyListView.swift; sourceTree = "<group>"; };
+		D8F01EF826AB038300DC36B9 /* DutyPharmacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyPharmacy.swift; sourceTree = "<group>"; };
+		D8F01EFD26AB042D00DC36B9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D8F01EFE26AB042D00DC36B9 /* APIPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPaths.swift; sourceTree = "<group>"; };
+		D8F01F0426AB04C800DC36B9 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D8F01F0726AB052C00DC36B9 /* PharmacyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F01F0326AB049D00DC36B9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +68,12 @@
 		D8B8DF1F26AAEBDD00136F7D /* Pharmacy */ = {
 			isa = PBXGroup;
 			children = (
+				D8F01F0626AB04CD00DC36B9 /* Constants */,
+				D8F01EFC26AB042200DC36B9 /* Network */,
+				D8F01EF526AB02FB00DC36B9 /* ViewModel */,
+				D8F01EF426AB02F400DC36B9 /* View */,
+				D8F01EF326AB02EC00DC36B9 /* Model */,
+				D8F01EEF26AAFFDD00DC36B9 /* Helpers */,
 				D8B8DF2026AAEBDD00136F7D /* PharmacyApp.swift */,
 				D8B8DF2226AAEBDD00136F7D /* ContentView.swift */,
 				D8B8DF2426AAEBDF00136F7D /* Assets.xcassets */,
@@ -67,6 +89,63 @@
 				D8B8DF2726AAEBDF00136F7D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8F01EEF26AAFFDD00DC36B9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D8F01EF026AAFFE800DC36B9 /* CustomClasses */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D8F01EF026AAFFE800DC36B9 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D8F01EF126AB001100DC36B9 /* CustomTextField.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		D8F01EF326AB02EC00DC36B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8F01EF826AB038300DC36B9 /* DutyPharmacy.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8F01EF426AB02F400DC36B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8F01EF626AB031800DC36B9 /* PharmacyListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8F01EF526AB02FB00DC36B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8F01F0726AB052C00DC36B9 /* PharmacyListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8F01EFC26AB042200DC36B9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D8F01EFD26AB042D00DC36B9 /* API.swift */,
+				D8F01EFE26AB042D00DC36B9 /* APIPaths.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D8F01F0626AB04CD00DC36B9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D8F01F0426AB04C800DC36B9 /* Constant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +164,9 @@
 			dependencies = (
 			);
 			name = Pharmacy;
+			packageProductDependencies = (
+				D8F01F0226AB049D00DC36B9 /* Alamofire */,
+			);
 			productName = Pharmacy;
 			productReference = D8B8DF1D26AAEBDD00136F7D /* Pharmacy.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +194,9 @@
 				Base,
 			);
 			mainGroup = D8B8DF1426AAEBDD00136F7D;
+			packageReferences = (
+				D8F01F0126AB049D00DC36B9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D8B8DF1E26AAEBDD00136F7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +224,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B8DF2326AAEBDD00136F7D /* ContentView.swift in Sources */,
+				D8F01EF726AB031800DC36B9 /* PharmacyListView.swift in Sources */,
+				D8F01EF926AB038300DC36B9 /* DutyPharmacy.swift in Sources */,
+				D8F01F0526AB04C800DC36B9 /* Constant.swift in Sources */,
 				D8B8DF2126AAEBDD00136F7D /* PharmacyApp.swift in Sources */,
+				D8F01EFF26AB042D00DC36B9 /* API.swift in Sources */,
+				D8F01EF226AB001100DC36B9 /* CustomTextField.swift in Sources */,
+				D8F01F0826AB052C00DC36B9 /* PharmacyListViewModel.swift in Sources */,
+				D8F01F0026AB042D00DC36B9 /* APIPaths.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8F01F0126AB049D00DC36B9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8F01F0226AB049D00DC36B9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8F01F0126AB049D00DC36B9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8B8DF1526AAEBDD00136F7D /* Project object */;
 }
