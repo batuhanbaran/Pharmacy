@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct DutyPharmacy: Codable {
+struct DutyPharmacy: Codable, Hashable {
     let success: Bool
     let result: [DutyPharmacyResult]
 }
 
-struct DutyPharmacyResult: Codable {
+struct DutyPharmacyResult: Codable, Hashable {
     let name: String
     let dist: String
     let address: String

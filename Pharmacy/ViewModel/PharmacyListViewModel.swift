@@ -12,12 +12,13 @@ class PharmacyListViewModel: ObservableObject {
     @Published var dist = ""
     @Published var address = ""
     @Published var phone = ""
-
+    @Published var dutyPharmacyResult = [DutyPharmacyResult]()
+    
     func fetchPharmaciesByCityName(searchedText: String) {
         API.fetch(endPoint: "health/dutyPharmacy?il=\(searchedText)") { (pharmacyList: Result<DutyPharmacy,Error>) in
             switch pharmacyList {
             case .success(let dutyPharmacy):
-                print(dutyPharmacy.result)
+                self.dutyPharmacyResult = dutyPharmacy.result
             case .failure(let error):
                 print(error.localizedDescription)
             }
