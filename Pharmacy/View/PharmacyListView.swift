@@ -14,7 +14,7 @@ struct PharmacyListView: View {
     
     var body: some View {
         List {
-            ForEach([viewModel.dutyPharmacyResult], id: \.self) { result in
+            ForEach(viewModel.dutyPharmacyResult, id: \.self) { result in
                 VStack(alignment: .leading, spacing: 10) {
                     Text("İsmi: \(result.name)")
                         .font(.title2)
